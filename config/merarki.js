@@ -23,27 +23,27 @@ for (i of saralData){
 
 
 
-// saral_data=saralJson
-// arry=[]
-// for(i of saral_data){
-//         const id=i.id
-//         const name=i.name
-//         const logo=i.logo
-//         const notes=i.notes
-//         const days_to_complete=i.days_to_complete
-//         const short_description=i.short_description
-//         const type=i.type
-//         const course_type=i.course_type
-//         const lang_available=i.lang_available
+const saral_data=saralData
+arry=[]
+for(i of saral_data){
+        const id=i.id
+        const name=i.name
+        const logo=i.logo
+        const notes=i.notes
+        const days_to_complete=i.days_to_complete
+        const short_description=i.short_description
+        const type=i.type
+        const course_type=i.course_type
+        const lang_available=i.lang_available
 
-//         const dict={id:id,name:name,logo:logo,notes:notes,days_to_complete:days_to_complete,short_description:short_description,type:type,course_type:course_type,lang_available:lang_available}
-//         arry.push(dict)
-//         // console.log(arry)
-//         knex('saraltable').insert(arry).then(()=>{
-//             console.log({success:'insert data successfully'})
-//         }).catch((err)=>{
-//             console.log(err);throw err
-//         })
-//     }
+        const dict={id:id,name:name,logo:logo,notes:notes,days_to_complete:days_to_complete,short_description:short_description,type:type,course_type:course_type,lang_available:lang_available}
+        arry.push(dict)
+        // console.log(arry)
+        knex('saraltable').insert(arry).then(()=>{
+            console.log({success:'insert data successfully'})
+        }).catch((err)=>{
+            console.log(err);throw err
+        })
+    }
 
     

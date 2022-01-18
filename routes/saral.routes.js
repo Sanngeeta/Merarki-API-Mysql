@@ -2,7 +2,7 @@ const {get_saraldata,post_saraldata,update_saraldata,deleteByid}=require('../con
 const express=require('express')
 const router=express.Router()
 
-router.get('/',get_saraldata)
+router.get('/api/saral',get_saraldata)
 
 router.post('/api/saral',post_saraldata)
 

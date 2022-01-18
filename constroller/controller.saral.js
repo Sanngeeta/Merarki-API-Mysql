@@ -1,5 +1,5 @@
 const knex=require('../config/table')
-const conn=require('../config/database')
+// const conn=require('../config/database')
 
 get_saraldata=(req,res)=>{
     knex.select('*').from('saraltable')

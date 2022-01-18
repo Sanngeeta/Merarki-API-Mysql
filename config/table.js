@@ -13,7 +13,7 @@ knex.schema.createTable('saraltable',(table)=>{
     table.string('name')
     table.string('logo')
     table.string('notes')
-    table.string('days_to_complete')
+    table.integer('days_to_complete')
     table.string('short_description')
     table.string('type')
     table.string('course_type')
